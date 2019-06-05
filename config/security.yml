@@ -1,0 +1,16 @@
+firewalls:
+  dev:
+    pattern: ^/(_(profiler|wdt)|css|images|js)/
+    security: false
+  api:
+    pattern: ^/api/
+    guard:
+      authenticators:
+        - App\Security\TokenAuthenticator
+  main:
+    # anonymous: true
+    anonymous: ~
+    logout: ~
+
+  access_control:
+    - { path: ^/api/sport, roles: ROLE_USER, methods: [POST, GET, PUT] }
