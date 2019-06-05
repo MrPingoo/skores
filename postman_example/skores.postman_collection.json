@@ -1,0 +1,119 @@
+{
+	"variables": [],
+	"info": {
+		"name": "skores",
+		"_postman_id": "5c14e2d3-0382-ef1d-6009-8168aed4b218",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://skores.local.fr/api/sport/1",
+			"request": {
+				"url": "http://skores.local.fr/api/sport/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AUTH-TOKEN",
+						"value": "ThisIsAnUnsecuredToken",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://skores.local.fr/api/sport",
+			"request": {
+				"url": "http://skores.local.fr/api/sport",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AUTH-TOKEN",
+						"value": "ThisIsAnUnsecuredToken",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://skores.local.fr/api/sport",
+			"request": {
+				"url": "http://skores.local.fr/api/sport/new",
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AUTH-TOKEN",
+						"value": "ThisIsAnUnsecuredToken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "label",
+							"value": "test",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://skores.local.fr/api/sport/1/edit",
+			"request": {
+				"url": "http://skores.local.fr/api/sport/1/edit",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-AUTH-TOKEN",
+						"value": "ThisIsAnUnsecuredToken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "label",
+							"value": "test",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://skores.local.fr/api/sport/1/",
+			"request": {
+				"url": "http://skores.local.fr/api/sport/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-AUTH-TOKEN",
+						"value": "ThisIsAnUnsecuredToken",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
